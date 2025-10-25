@@ -290,30 +290,45 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Active Nav Link Observer
     if (sections.length > 0 && navLinks.length > 0 && header) {
-        const navObserver = new IntersectionObserver(() => {
+        const navObserver = new IntersectionObserver((entries) => {
             let activeSectionId = 'home';
-            let smallestDistance = Infinity;
-            const detectionPoint = window.innerHeight * 0.4;
+            let maxVisibleRatio = 0;
+            const viewportHeight = window.innerHeight;
+            const scrollTop = window.scrollY;
 
+            // Check each section to find the most visible one
             sections.forEach(section => {
                 const rect = section.getBoundingClientRect();
+                const sectionTop = rect.top;
+                const sectionBottom = rect.bottom;
+                const sectionHeight = rect.height;
                 
-                // Only consider sections that are visible on screen
-                if (rect.top <= window.innerHeight && rect.bottom >= 0) {
-                    const distance = Math.abs(rect.top - detectionPoint);
-                    if (distance < smallestDistance) {
-                        smallestDistance = distance;
+                // Calculate how much of the section is visible
+                const visibleTop = Math.max(0, sectionTop);
+                const visibleBottom = Math.min(viewportHeight, sectionBottom);
+                const visibleHeight = Math.max(0, visibleBottom - visibleTop);
+                const visibleRatio = visibleHeight / sectionHeight;
+                
+                // Only consider sections that are at least partially visible
+                if (visibleHeight > 0 && sectionTop < viewportHeight && sectionBottom > 0) {
+                    // If section is more than 50% visible, it's the active one
+                    if (visibleRatio > 0.5 && visibleRatio > maxVisibleRatio) {
+                        maxVisibleRatio = visibleRatio;
+                        activeSectionId = section.id;
+                    }
+                    // If no section is more than 50% visible, use the one closest to the top
+                    else if (maxVisibleRatio === 0 && sectionTop <= viewportHeight * 0.3) {
                         activeSectionId = section.id;
                     }
                 }
             });
             
-            // If the user is near the top of the page, force "Home" to be active.
-            if (window.scrollY < window.innerHeight / 2) {
+            // Special case: if we're at the very top of the page, always show "Home"
+            if (scrollTop < 100) {
                 activeSectionId = 'home';
             }
 
-            // Update nav links based on the determined active section.
+            // Update nav links based on the determined active section
             navLinks.forEach(link => {
                 const href = link.getAttribute('href');
                 const isMatch = (href === '#home' && activeSectionId === 'home') || href === `#${activeSectionId}`;
@@ -326,7 +341,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
         }, {
-            threshold: 0.01 // Trigger as soon as a tiny part is visible
+            threshold: [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0] // Multiple thresholds for better detection
         });
 
         sections.forEach(section => {
