@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="See what's new, what we're building, and what's next for Tradlyst. Follow our public roadmap to stay updated on the latest features for Indian traders.">
+    <title>Public Roadmap | Tradlyst</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%233B82F6%22></rect><text x=%2250%%22 y=%2250%%22 dominant-baseline=%22central%22 text-anchor=%22middle%22 font-size=%2260%22 font-family=%22sans-serif%22 font-weight=%22bold%22 fill=%22%23FFFFFF%22>TD</text></svg>">
+    <link rel="canonical" href="./roadmap.html">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+    <!-- SEO: Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Tradlyst",
+        "url": "./index.html",
+        "logo": "data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%233B82F6%22></rect><text x=%2250%%22 y=%2250%%22 dominant-baseline=%22central%22 text-anchor=%22middle%22 font-size=%2260%22 font-family=%22sans-serif%22 font-weight=%22bold%22 fill=%22%23FFFFFF%22>TD</text></svg>",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "contact@tradlyst.com",
+            "contactType": "Customer Service",
+            "url": "./contact.html"
+        }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Tradlyst",
+        "url": "./index.html"
+    }
+    </script>
+</head>
+
+<body class="antialiased">
+    <div id="page-overlay"></div>
+    <!-- Header -->
+    <header id="main-header" class="sticky top-0 z-50 bg-[#0D1117] bg-opacity-95 backdrop-blur-md border-b border-gray-800">
+        <nav class="container mx-auto px-4 sm:px-6 flex justify-between items-center">
+            <a href="./index.html" class="text-2xl font-bold text-white flex items-center gap-2">
+                <span class="bg-blue-600 rounded-md p-1">TD</span>
+                Tradlyst
+            </a>
+            <div class="hidden lg:flex items-center space-x-8">
+                <a href="./index.html" class="text-gray-300 hover:text-white transition">Home</a>
+                <a href="./index.html#features" class="text-gray-300 hover:text-white transition">Features</a>
+                <a href="./index.html#why-tradlyst" class="text-gray-300 hover:text-white transition">Why Tradlyst</a>
+                <a href="./index.html#how-it-works" class="text-gray-300 hover:text-white transition">How It Works</a>
+                <a href="./index.html#testimonials" class="text-gray-300 hover:text-white transition">Testimonials</a>
+                <a href="./index.html#pricing" class="text-gray-300 hover:text-white transition">Pricing</a>
+                <a href="./index.html#faq" class="text-gray-300 hover:text-white transition">FAQ</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="./index.html#pricing" class="border border-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg transition transform hover:scale-105 hidden sm:block btn-ripple">Login / Sign Up</a>
+                <button id="mobile-menu-button" class="lg:hidden text-gray-300 hover:text-white focus:outline-none p-2 -mr-2" aria-label="Open menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu Panel -->
+    <div id="mobile-menu" class="p-8">
+        <div class="flex justify-between items-center mb-8">
+             <a href="./index.html" class="text-2xl font-bold text-white flex items-center gap-2">
+                <span class="bg-blue-600 rounded-md p-1">TD</span>
+                Tradlyst
+            </a>
+            <button id="mobile-menu-close-button" class="text-gray-400 hover:text-white" aria-label="Close menu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+        </div>
+        <nav class="flex flex-col space-y-6 text-lg">
+            <a href="./index.html" class="nav-link-mobile text-gray-300 hover:text-white transition">Home</a>
+            <a href="./index.html#features" class="nav-link-mobile text-gray-300 hover:text-white transition">Features</a>
+            <a href="./index.html#why-tradlyst" class="nav-link-mobile text-gray-300 hover:text-white transition">Why Tradlyst</a>
+            <a href="./index.html#how-it-works" class="nav-link-mobile text-gray-300 hover:text-white transition">How It Works</a>
+            <a href="./index.html#testimonials" class="nav-link-mobile text-gray-300 hover:text-white transition">Testimonials</a>
+            <a href="./index.html#pricing" class="nav-link-mobile text-gray-300 hover:text-white transition">Pricing</a>
+            <a href="./index.html#faq" class="nav-link-mobile text-gray-300 hover:text-white transition">FAQ</a>
+            <a href="./index.html#pricing" class="nav-link-mobile mt-4 inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg text-center transition">Login / Sign Up</a>
+        </nav>
+    </div>
+
+    <main class="py-8 sm:py-12 md:py-16">
+        <div class="container mx-auto px-4 sm:px-6 max-w-6xl">
+            <div class="text-center mb-8">
+                <h1 class="text-4xl md:text-5xl font-extrabold text-white">Public Roadmap</h1>
+                <p class="mt-4 text-lg text-gray-400 max-w-3xl mx-auto">See what we're working on, what's planned for the future, and what we've recently launched. We're building Tradlyst with you, for you.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Planned Column -->
+                <div class="space-y-3">
+                    <h2 class="text-2xl font-bold text-blue-400 mb-3 border-b-2 border-blue-400/30 pb-2">🚀 Planned</h2>
+                    
+                    <!-- Multi-Broker Auto-Sync -->
+                    <div class="card-bg p-4">
+                        <h3 class="font-semibold text-white">Multi-Broker Auto-Sync</h3>
+                        <p class="text-sm text-gray-400 mt-1">Seamlessly import your trades automatically from popular Indian brokers like Zerodha, Upstox, AngelOne, Fyers, Groww, and more.</p>
+                    </div>
+                    
+                    <!-- Live Market Data Feed -->
+                    <div class="card-bg p-4">
+                        <h3 class="font-semibold text-white">Live Market Data Feed (CMP)</h3>
+                        <p class="text-sm text-gray-400 mt-1">Integrate real-time market data (Current Market Price) for stocks and indices from NSE/BSE to provide live P&L updates for open positions.</p>
+                    </div>
+                    
+                    <!-- Mobile App -->
+                    <div class="card-bg p-4">
+                        <h3 class="font-semibold text-white">Mobile App (iOS & Android)</h3>
+                        <p class="text-sm text-gray-400 mt-1">Dedicated mobile apps to log and analyze your trades on the go.</p>
+                    </div>
+                    
+                    <!-- Chart Image Attachments -->
+                    <div class="card-bg p-4">
+                        <h3 class="font-semibold text-white">Chart Image Attachments</h3>
+                        <p class="text-sm text-gray-400 mt-1">Option to upload and attach screenshots of your trade setups directly to your journal entries.</p>
+                    </div>
+                    
+                    <!-- Forex Trading Support -->
+                    <div class="card-bg p-4">
+                        <h3 class="font-semibold text-white">Forex Trading Support</h3>
+                        <p class="text-sm text-gray-400 mt-1">Expand journaling capabilities beyond equities and F&O to include Forex segments.</p>
+                    </div>
+                    
+                    <!-- Multiple Account Support -->
+                    <div class="card-bg p-4">
+                        <h3 class="font-semibold text-white">Multiple Account Support</h3>
+                        <p class="text-sm text-gray-400 mt-1">Add and manage trading journals for multiple brokerage accounts within a single Tradlyst login.</p>
+                    </div>
+                    
+                    <!-- Automated Broker Charges -->
+                    <div class="card-bg p-4">
+                        <h3 class="font-semibold text-white">Automated Broker Charges Calculation</h3>
+                        <p class="text-sm text-gray-400 mt-1">Automatically calculate estimated brokerage and charges based on the specific broker and segment.</p>
+                    </div>
+                    
+                    <!-- Auto Symbol Fetch -->
+                    <div class="card-bg p-4">
+                        <h3 class="font-semibold text-white">Auto Symbol Fetch/Suggestions</h3>
+                        <p class="text-sm text-gray-400 mt-1">Smart suggestions for stock/index symbols as you type in the "Add Trade" form.</p>
+                    </div>
+                    
+                    <!-- Advanced Options Analytics -->
+                    <div class="card-bg p-4">
+                        <h3 class="font-semibold text-white">Advanced Options Analytics</h3>
+                        <p class="text-sm text-gray-400 mt-1">Tools to track and analyze complex options strategies, Greeks (Delta, Gamma, Theta, Vega), and profit/loss scenarios visually.</p>
+                    </div>
+                    
+                    <!-- Backtesting Module -->
+                    <div class="card-bg p-4">
+                        <h3 class="font-semibold text-white">Backtesting Module</h3>
+                        <p class="text-sm text-gray-400 mt-1">Feature to test your trading strategies against historical market data directly within Tradlyst.</p>
+                    </div>
+                    
+                    <!-- Customizable Dashboards -->
+                    <div class="card-bg p-4">
+                        <h3 class="font-semibold text-white">Fully Customizable Dashboards</h3>
+                        <p class="text-sm text-gray-400 mt-1">Allow users to create and arrange their own dashboard layouts with widgets for the metrics that matter most to them.</p>
+                    </div>
+                    
+                    <!-- Stock Ticker Widget -->
+                    <div class="card-bg p-4">
+                        <h3 class="font-semibold text-white">Stock Ticker Widget</h3>
+                        <p class="text-sm text-gray-400 mt-1">A configurable ticker displaying live prices for selected stocks or indices within the app.</p>
+                    </div>
+                    
+                    <!-- In-App Chat/Community -->
+                    <div class="card-bg p-4">
+                        <h3 class="font-semibold text-white">In-App Chat/Community Feature</h3>
+                        <p class="text-sm text-gray-400 mt-1">A space for Tradlyst users to connect, discuss strategies, and share insights (optional/privacy-focused).</p>
+                    </div>
+                    
+                    <!-- Expanded Analytics Suite -->
+                    <div class="card-bg p-4">
+                        <h3 class="font-semibold text-white">Expanded Analytics Suite</h3>
+                        <p class="text-sm text-gray-400 mt-1">Introduce even more in-depth reports and visualizations based on user feedback.</p>
+                    </div>
+                    
+                    <!-- Public API Access -->
+                    <div class="card-bg p-4">
+                        <h3 class="font-semibold text-white">Public API Access</h3>
+                        <p class="text-sm text-gray-400 mt-1">Provide an API for developers and pro-traders to build custom integrations or tools using their Tradlyst data.</p>
+                    </div>
+                </div>
+
+                <!-- In Progress Column -->
+                <div class="space-y-3">
+                    <h2 class="text-2xl font-bold text-yellow-400 mb-3 border-b-2 border-yellow-400/30 pb-2">🛠️ In Progress</h2>
+                    
+                    <!-- UI/UX Refinements -->
+                    <div class="card-bg p-4">
+                        <h3 class="font-semibold text-white">UI/UX Refinements</h3>
+                        <p class="text-sm text-gray-400 mt-1">Continuously improving the user interface and overall user experience based on feedback, making the app more intuitive and visually appealing across all devices.</p>
+                    </div>
+                    
+                    <!-- Performance Optimizations -->
+                    <div class="card-bg p-4">
+                        <h3 class="font-semibold text-white">Performance Optimizations</h3>
+                        <p class="text-sm text-gray-400 mt-1">Enhancing the speed and responsiveness of the application, especially when handling large amounts of trade data in reports and history.</p>
+                    </div>
+                    
+                    <!-- Bug Fixes & Stability -->
+                    <div class="card-bg p-4">
+                        <h3 class="font-semibold text-white">Ongoing Bug Fixes & Stability Improvements</h3>
+                        <p class="text-sm text-gray-400 mt-1">Actively identifying and fixing bugs to ensure a smooth and reliable experience for all users.</p>
+                    </div>
+                    
+                    <!-- AI Analyst Capabilities -->
+                    <div class="card-bg p-4">
+                        <h3 class="font-semibold text-white">Expanding AI Analyst Capabilities</h3>
+                        <p class="text-sm text-gray-400 mt-1">Making the AI Analyst smarter with more personalized insights, pattern recognition, and actionable recommendations based on your trading psychology and performance.</p>
+                    </div>
+                    
+                    <!-- Report Metrics & Visualizations -->
+                    <div class="card-bg p-4">
+                        <h3 class="font-semibold text-white">Refining Report Metrics & Visualizations</h3>
+                        <p class="text-sm text-gray-400 mt-1">Improving the accuracy, clarity, and visual presentation of data in the Reports section, potentially adding new calculation options or chart types.</p>
+                    </div>
+                    
+                </div>
+                
+                <!-- Launched Column -->
+                <div class="space-y-3">
+                    <h2 class="text-2xl font-bold text-green-400 mb-3 border-b-2 border-green-400/30 pb-2">✅ Launched</h2>
+                    
+                    <!-- Manual Trade Entry -->
+                    <div class="card-bg p-4">
+                        <h3 class="font-semibold text-white">Manual Trade Entry</h3>
+                        <p class="text-sm text-gray-400 mt-1">Log detailed information for each trade, including symbol, direction, segment, trading style, entry/exit dates & times, prices, quantities, stop loss, target, brokerage, and other charges.</p>
+                    </div>
+                    
+                    <!-- Comprehensive Dashboard -->
+                    <div class="card-bg p-4">
+                        <h3 class="font-semibold text-white">Comprehensive Dashboard</h3>
+                        <p class="text-sm text-gray-400 mt-1">Get an at-a-glance overview of your trading performance with Key Performance Indicators (KPIs) like Net P&L, Win Rate, Profit Factor, and Average Win/Loss. Includes Account Summary and Open Positions Overview.</p>
+                    </div>
+                    
+                    <!-- Psychology Tracking -->
+                    <div class="card-bg p-4">
+                        <h3 class="font-semibold text-white">Psychology Tracking</h3>
+                        <p class="text-sm text-gray-400 mt-1">Tag trades with your emotional state (Calm, Anxious, Confident, etc.) and identify common mistakes (Overtrading, Ignored Stop Loss, etc.) to understand behavioral patterns.</p>
+                    </div>
+                    
+                    <!-- Strategy Tagging -->
+                    <div class="card-bg p-4">
+                        <h3 class="font-semibold text-white">Strategy Tagging</h3>
+                        <p class="text-sm text-gray-400 mt-1">Assign predefined or custom strategy tags to your trades for performance analysis by strategy.</p>
+                    </div>
+                    
+                    <!-- Trading Calendar View -->
+                    <div class="card-bg p-4">
+                        <h3 class="font-semibold text-white">Trading Calendar View</h3>
+                        <p class="text-sm text-gray-400 mt-1">Visualize your trading days on a calendar, showing daily P&L and allowing quick access to trades made on a specific day.</p>
+                    </div>
+                    
+                    <!-- Detailed Trade History -->
+                    <div class="card-bg p-4">
+                        <h3 class="font-semibold text-white">Detailed Trade History</h3>
+                        <p class="text-sm text-gray-400 mt-1">View, filter, and manage all your past trades in a comprehensive log with options to edit or delete entries. Includes bulk delete functionality.</p>
+                    </div>
+                    
+                    <!-- Fund Management Ledger -->
+                    <div class="card-bg p-4">
+                        <h3 class="font-semibold text-white">Fund Management Ledger</h3>
+                        <p class="text-sm text-gray-400 mt-1">Track your deposits and withdrawals to maintain an accurate account balance history.</p>
+                    </div>
+                    
+                    <!-- Advanced Reporting Suite -->
+                    <div class="card-bg p-4">
+                        <h3 class="font-semibold text-white">Advanced Reporting Suite</h3>
+                        <p class="text-sm text-gray-400 mt-1">Deep dive into your performance with various charts and metrics, including Account Balance Curve, Equity Curve, Daily & Monthly P&L Bar Charts, P&L by Trading Style & Segment, Win/Loss Distribution, Performance by Day of the Week, Net P&L by Mood, Most Common Mistakes Analysis, and Detailed Performance Metrics Table.</p>
+                    </div>
+                    
+                    <!-- Detailed Trade Statement -->
+                    <div class="card-bg p-4">
+                        <h3 class="font-semibold text-white">Detailed Trade Statement</h3>
+                        <p class="text-sm text-gray-400 mt-1">Generate a filterable statement of all transactions (trades, deposits, withdrawals) with an option to export as CSV.</p>
+                    </div>
+                    
+                    <!-- CSV Bulk Trade Upload -->
+                    <div class="card-bg p-4">
+                        <h3 class="font-semibold text-white">CSV Bulk Trade Upload</h3>
+                        <p class="text-sm text-gray-400 mt-1">Import multiple trades at once using a formatted CSV file.</p>
+                    </div>
+                    
+                    <!-- Capital Growth Challenge -->
+                    <div class="card-bg p-4">
+                        <h3 class="font-semibold text-white">Capital Growth Challenge</h3>
+                        <p class="text-sm text-gray-400 mt-1">Set and track progress towards specific capital growth goals within a defined timeframe. Includes challenge history.</p>
+                    </div>
+                    
+                    <!-- AI Analyst -->
+                    <div class="card-bg p-4">
+                        <h3 class="font-semibold text-white">AI Analyst (Initial Version)</h3>
+                        <p class="text-sm text-gray-400 mt-1">Get AI-powered insights, alerts on potential issues (like overtrading or risk management), trader personality profiling, behavioral analysis, and actionable recommendations based on your data.</p>
+                    </div>
+                    
+                    <!-- User Profile Management -->
+                    <div class="card-bg p-4">
+                        <h3 class="font-semibold text-white">User Profile Management</h3>
+                        <p class="text-sm text-gray-400 mt-1">Update your personal information and manage your account password.</p>
+                    </div>
+                    
+                    <!-- Light/Dark Mode Theme -->
+                    <div class="card-bg p-4">
+                        <h3 class="font-semibold text-white">Light/Dark Mode Theme</h3>
+                        <p class="text-sm text-gray-400 mt-1">Switch between light and dark themes for comfortable viewing.</p>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-consent-banner" class="fixed bottom-0 left-0 right-0 bg-gray-900/90 backdrop-blur-sm border-t border-gray-700 p-4 transform translate-y-full z-[100]">
+        <div class="container mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p class="text-sm text-gray-300 text-center sm:text-left">
+                We use cookies to enhance your experience. By clicking "Accept", you agree to our use of cookies. <a href="./privacy.html" class="text-blue-400 hover:underline">Learn more</a>.
+            </p>
+            <div class="flex items-center gap-4 flex-shrink-0">
+                <button id="cookie-decline-btn" class="text-sm text-gray-400 hover:text-white transition">Decline</button>
+                <button id="cookie-accept-btn" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg transition text-sm btn-ripple">Accept</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-[#010409] border-t border-gray-800">
+        <div class="container mx-auto px-4 sm:px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-8">
+                <div class="md:col-span-2">
+                    <h3 class="text-xl font-bold text-white mb-2">Tradlyst</h3>
+                    <p class="text-gray-300">India's most advanced trading journal, built for serious traders looking to improve their performance.</p>
+                    <div class="mt-6">
+                        <h4 class="font-semibold text-gray-200 mb-4">Follow Us</h4>
+                        <div class="footer-social-links">
+                            <a href="https://youtube.com/@tradlyst" class="social-icon-link" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-youtube fa-lg"></i>
+                            </a>
+                            <a href="https://x.com/tradlyst" class="social-icon-link" aria-label="X" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-x-twitter fa-lg"></i>
+                            </a>
+                            <a href="https://facebook.com/tradlyst" class="social-icon-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-facebook-f fa-lg"></i>
+                            </a>
+                            <a href="https://linkedin.com/company/tradlyst" class="social-icon-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-linkedin-in fa-lg"></i>
+                            </a>
+                            <a href="https://pinterest.com/tradlyst" class="social-icon-link" aria-label="Pinterest" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-pinterest-p fa-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-gray-200 mb-4">Company</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="./about.html" class="inline-block hover:text-white transition hover:-translate-y-0.5">About Us</a></li>
+                        <li><a href="./contact.html" class="inline-block hover:text-white transition hover:-translate-y-0.5">Contact Us</a></li>
+                        <li><a href="./careers.html" class="inline-block hover:text-white transition hover:-translate-y-0.5">Careers</a></li>
+                        <li><a href="./roadmap.html" class="inline-block hover:text-white transition hover:-translate-y-0.5">Roadmap</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-gray-200 mb-4">Legal</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="./terms.html" class="inline-block hover:text-white transition hover:-translate-y-0.5">Terms & Conditions</a></li>
+                        <li><a href="./privacy.html" class="inline-block hover:text-white transition hover:-translate-y-0.5">Privacy Policy</a></li>
+                        <li><a href="./refund.html" class="inline-block hover:text-white transition hover:-translate-y-0.5">Refund & Cancellation</a></li>
+                        <li><a href="./disclaimer.html" class="inline-block hover:text-white transition hover:-translate-y-0.5">Legal Disclaimer</a></li>
+                        <li><a href="./shipping.html" class="inline-block hover:text-white transition hover:-translate-y-0.5">Shipping Policy</a></li>
+                    </ul>
+                </div>
+                 <div>
+                    <h4 class="font-semibold text-gray-200 mb-4">Location</h4>
+                    <p class="text-gray-400 text-sm">
+                        New Delhi, India
+                    </p>
+                    <a href="mailto:contact@tradlyst.com" class="inline-block text-gray-400 hover:text-white transition text-sm mt-2 hover:-translate-y-0.5">Email: contact@tradlyst.com</a>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-800 pt-6 text-center text-gray-500">
+                <p>&copy; 2025 Tradlyst. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js" defer></script>
+</body>
+</html>
